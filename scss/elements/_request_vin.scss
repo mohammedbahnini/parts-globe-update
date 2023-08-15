@@ -1,0 +1,78 @@
+.form-request-vin {
+  margin: 0 auto;
+  width: 900px;
+}
+
+.form-request-vin-heading {
+  margin-bottom: 25px;
+}
+.form-request-vin-section {
+  background-color: #f1f1f1;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.form-request-vin-row {
+  display: flex;
+  margin-bottom: 15px;
+}
+.form-request-vin-row .label {
+  display: flex;
+  align-items: center;
+  flex-basis: 200px;
+}
+
+.form-request-vin-row .input,
+.form-request-vin-row.delete-part button {
+  flex-basis: calc(100% - 200px);
+}
+
+.form-request-vin-actions {
+  margin-left: 200px;
+}
+.check-terms {
+  margin-bottom: 15px;
+}
+
+.form-request-vin-actions .btn-group {
+  display: flex;
+  gap: 15px;
+}
+
+.form-request-vin-actions .btn-group button {
+  flex-grow: 1;
+}
+
+.form-request-vin-row.delete-part {
+  justify-content: flex-end;
+}
+
+.ps-btn-danger {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+  color: white !important;
+}
+
+@media (max-width: 992px) {
+  .form-request-vin {
+    width: 100%;
+  }
+
+  .form-request-vin-row {
+    flex-wrap: wrap;
+  }
+
+  .form-request-vin-row .label,
+  .form-request-vin-row .input,
+  .form-request-vin-row.delete-part button {
+    flex-basis: 100%;
+  }
+
+  .form-request-vin-actions {
+    margin: 0;
+  }
+
+  .form-request-vin-actions .btn-group {
+    flex-direction: column;
+  }
+}
